@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-highest": "#d9e3f1",
+          "secondary-container": "#fdd275",
+          "inverse-surface": "#27313c",
+          "on-primary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "error-container": "#ffdad6",
+          "surface-container-high": "#dfe9f7",
+          "surface-bright": "#f7f9ff",
+          "on-surface-variant": "#404942",
+          "secondary-fixed": "#ffdf9e",
+          "primary-container": "#0b5d3b",
+          "tertiary": "#244034",
+          "outline-variant": "#bfc9c0",
+          "on-primary-container": "#8ad4a8",
+          "outline": "#707a72",
+          "tertiary-container": "#3b574b",
+          "tertiary-fixed-dim": "#aecebe",
+          "primary-fixed-dim": "#8dd6ab",
+          "primary-fixed": "#a8f3c6",
+          "surface-tint": "#206b48",
+          "on-error-container": "#93000a",
+          "on-primary-fixed": "#002111",
+          "on-background": "#121d26",
+          "on-secondary-container": "#775800",
+          "on-tertiary-fixed-variant": "#304c41",
+          "inverse-on-surface": "#e8f2ff",
+          "tertiary-fixed": "#caeada",
+          "background": "#f7f9ff",
+          "surface": "#f7f9ff",
+          "surface-variant": "#d9e3f1",
+          "primary": "#004429",
+          "error": "#ba1a1a",
+          "on-error": "#ffffff",
+          "on-surface": "#121d26",
+          "secondary-fixed-dim": "#ebc166",
+          "on-tertiary-fixed": "#032017",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed-variant": "#5b4300",
+          "surface-container": "#e4effd",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed": "#261a00",
+          "surface-container-low": "#edf4ff",
+          "surface-dim": "#d1dbe8",
+          "on-tertiary-container": "#accbbc",
+          "secondary": "#795902",
+          "on-primary-fixed-variant": "#005232",
+          "inverse-primary": "#8dd6ab"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter-mobile": "1rem",
+          "margin": "3rem",
+          "margin-mobile": "1.25rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface" id="top"><header class="fixed top-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-1 px-margin-mobile lg:px-margin text-label-sm font-label-sm"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-1"><div class="flex items-center flex-wrap gap-x-space-md gap-y-1"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">school</span>Higher Education Department Punjab</span><span class="hidden sm:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">verified</span>Affiliated with BISE D.G. Khan</span><span class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">location_on</span>Indus Highway (N-55), Shadan Lund, Punjab</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button onclick="openNoticesModal()" title="College Notices" class="p-space-xs hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">campaign</span></button><button onclick="openCampusTourModal()" title="Campus Photos Tour" class="p-space-xs hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">photo_library</span></button><button onclick="openMeritCalculator()" title="Merit Calculator" class="p-space-xs hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">calculate</span></button><button onclick="openPrincipalModal()" title="Principal's Message" class="p-space-xs hover:text-secondary-fixed transition-colors"><span class="material-symbols-outlined text-[14px]">person</span></button></div><span class="h-3 w-[1px] bg-outline-variant/40"></span><div class="flex items-center gap-space-xs text-label-sm font-label-sm font-semibold"><span class="text-secondary-fixed cursor-pointer" onclick="toggleLanguage('en')">EN</span><span>|</span><span class="text-on-primary/80 hover:text-on-primary transition-colors cursor-pointer" onclick="toggleLanguage('ur')">اردو</span></div></div></div></div><div class="bg-surface/95 backdrop-blur-xl"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><a href="#top" class="flex items-center gap-space-md shrink-0 group"><img alt="GAC Shadan Lund College Emblem" class="h-14 w-14 object-contain drop-shadow transition-transform group-hover:scale-105" src="logo.svg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight uppercase group-hover:text-primary-container transition-colors">Govt. Associate College</span><span class="font-label-md text-label-md tracking-wider text-secondary uppercase">Shadan Lund, Punjab</span></div></a><nav class="hidden xl:flex items-center gap-space-md font-body-sm text-body-sm" data-active-classes="text-primary font-title-md border-b-2 border-primary"><a aria-current="page" class="transition-colors py-1 text-primary font-title-md border-b-2 border-primary" data-path="home" href="#top">Home</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="about-us" href="#about-us">About Us</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="academics" href="#academic-programs">Academics</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="admissions" href="#admissions-section">Admissions</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="students" href="#student-activities">Activities</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="gallery" href="#gallery-section">Gallery</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="news-events" href="#news-section">News &amp; Events</a><a class="text-emerald-800 hover:text-emerald-950 font-semibold transition-colors inline-flex items-center gap-1.5 bg-emerald-100/90 hover:bg-emerald-200 px-3 py-1 rounded-full text-xs shadow-sm" data-path="anti-smog" href="#anti-smog"><span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>Anti-Smog</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="contact" href="#contact-section">Campus Desk</a></nav><div class="flex items-center gap-space-md shrink-0"><button onclick="openApplyModal()" class="hidden sm:inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-label-md text-label-md px-space-md py-space-sm rounded transition-all shadow-[0_2px_8px_rgba(121,89,2,0.12)] cursor-pointer"><span class="material-symbols-outlined text-[18px]">how_to_reg</span>Apply Now</button><button onclick="openPrincipalModal()" title="Principal Dr. Imtiaz Ahmad" class="w-9 h-9 rounded-full bg-primary hover:bg-primary-container flex items-center justify-center transition-colors cursor-pointer shadow"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></button></div></div></div></header><main class="w-full pt-[112px] bg-surface min-h-[calc(100vh-112px)]"><div class="flex flex-col w-full">
+<!-- 01. TICKER BANNER (URGENT NOTICES) -->
+<div class="w-full bg-primary-container text-on-primary py-space-xs px-margin-mobile lg:px-margin text-body-sm font-body-sm overflow-hidden flex items-center shadow-inner">
+<div class="max-w-7xl mx-auto w-full flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-secondary text-on-secondary px-space-sm py-0.5 rounded text-label-sm font-label-md shrink-0 uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] animate-pulse">campaign</span>
+        Official Bulletin
+      </div>
+<div class="overflow-hidden relative w-full whitespace-nowrap">
+<div class="inline-block animate-[marquee_28s_linear_infinite] hover:[animation-play-state:paused] cursor-pointer text-surface-bright/95">
+<span class="inline-flex items-center gap-space-xs mx-space-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><strong>Admissions Open 2026:</strong> Intermediate (F.Sc, ICS, I.Com, FA) &amp; ADP Programs portal is live.</span>
+<span class="inline-flex items-center gap-space-xs mx-space-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><strong>Merit List Schedule:</strong> 1st Provisional Merit List to be displayed on August 15, 2026.</span>
+<span class="inline-flex items-center gap-space-xs mx-space-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><strong>Ehsaas &amp; PEEF Scholarships:</strong> Deserving and talent scholarship verification underway at the Student Affairs Desk.</span>
+<span class="inline-flex items-center gap-space-xs mx-space-md"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span><strong>Anti-Smog Drive:</strong> Awareness seminar &amp; student activities conducted under HED Punjab directives.</span>
+<span class="inline-flex items-center gap-space-xs mx-space-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><strong>Sports Gala:</strong> Registrations for Annual Inter-Wing Cricket, Football, &amp; Tug-of-War championships now open.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 02. HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary">
+<!-- Campus Hero Image & Scrim -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="Govt. Associate College Shadan Lund campus building" style="background-image: url('hero-bg.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/40"></div>
+<!-- Subtle Islamic Pattern Overlay -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffdf9e_1px,transparent_1px)] [background-size:24px_24px]"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Hero Copy -->
+<div class="lg:col-span-8 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-surface-bright/10 backdrop-blur-md px-space-md py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="text-secondary-fixed font-label-md text-label-md uppercase tracking-widest">Affiliated with BISE D.G. Khan &amp; HED Punjab</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-surface-bright leading-tight tracking-tight">
+            Where Knowledge <br class="hidden sm:block"/>
+<span class="text-secondary-fixed italic font-normal">Builds Character</span> &amp; Destiny
+          </h1>
+<p class="font-body-lg text-body-lg text-surface-bright/90 max-w-2xl leading-relaxed">
+            Govt. Associate College Shadan Lund — Fostering South Punjab’s brightest minds through disciplined collegiate scholarship, ethical leadership, and high-impact science &amp; technology pathways.
+          </p>
+<!-- CTAs -->
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<button onclick="openApplyModal()" class="inline-flex items-center gap-space-xs bg-secondary hover:bg-secondary-fixed-dim text-surface-bright font-title-md text-title-md px-space-lg py-space-md rounded transition-all shadow-lg shadow-black/20 group cursor-pointer">
+<span>Apply for Admission 2026</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<a class="inline-flex items-center gap-space-xs bg-surface-bright/10 hover:bg-surface-bright/20 backdrop-blur-md text-surface-bright font-title-md text-title-md px-space-lg py-space-md rounded transition-all" href="#academic-programs">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">menu_book</span>
+<span>Explore Disciplines</span>
+</a>
+</div>
+<!-- Secondary Accreditation Highlights -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-lg text-surface-bright/80 font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified_user</span>
+              100% Govt. Certified Merit Admissions
+            </span>
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">workspace_premium</span>
+              Gold Medal BISE DG Khan Faculty
+            </span>
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">handshake</span>
+              Ehsaas &amp; PEEF Scholarships
+            </span>
+</div>
+</div>
+<!-- Right Quick Action Admissions Card -->
+<div class="lg:col-span-4">
+<div class="bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-secondary to-primary-container"></div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Fall Session 2026
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">HED Portal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Admissions Desk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Applications open for Intermediate &amp; Associate Degree Programs across all academic faculties.</p>
+<div class="space-y-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface text-sm font-semibold">F.Sc &amp; ICS Wings</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Pre-Med, Pre-Engg &amp; Comp Sci</p>
+</div>
+<span class="text-label-sm font-label-md px-2 py-0.5 rounded bg-primary-container text-on-primary">Open</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface text-sm font-semibold">FA &amp; I.Com Wings</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Humanities, Arts &amp; Commerce</p>
+</div>
+<span class="text-label-sm font-label-md px-2 py-0.5 rounded bg-primary-container text-on-primary">Open</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<p class="font-title-md text-title-md text-on-surface text-sm font-semibold">ADP Programs (2-Year)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Science, Arts &amp; IT Specialization</p>
+</div>
+<span class="text-label-sm font-label-md px-2 py-0.5 rounded bg-secondary text-on-secondary">Few Seats</span>
+</div>
+</div>
+<!-- Countdown / Deadline Highlight -->
+<div class="p-space-sm rounded bg-surface-container-highest/60 flex items-center gap-space-sm mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">event_upcoming</span>
+<div>
+<p class="font-label-sm text-label-sm uppercase font-semibold text-secondary">Last Date to Submit:</p>
+<p class="font-title-md text-title-md text-on-surface font-bold">August 10, 2026</p>
+</div>
+</div>
+<button onclick="openApplyModal()" class="w-full inline-flex items-center justify-center gap-space-xs py-space-sm bg-primary hover:bg-primary-container text-on-primary rounded font-label-md text-label-md tracking-wide transition-colors cursor-pointer shadow">
+<span class="material-symbols-outlined text-[18px]">app_registration</span>
+              Start Online Registration
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 03. OVERLAPPING METRICS BAR -->
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin -mt-16 relative z-20 w-full">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl p-space-md lg:p-space-lg">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-space-lg">
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">groups</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-bold">3,200+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Students Enrolled</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-bold">75+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">MPhil &amp; PhD Scholars</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container/15 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">history_edu</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-bold">18+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Academic Programs</p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">military_tech</span>
+</div>
+<div>
+<p class="font-headline-md text-headline-md text-primary font-bold">38+ Yrs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Legacy of Merit (1986)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. ABOUT COLLEGE SECTION (EDITORIAL TWO-COLUMN) -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile lg:px-margin" id="about-us">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Image Collage -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="relative">
+<div class="rounded-xl overflow-hidden shadow-lg h-84 w-full bg-cover bg-center cursor-pointer group" data-alt="National Flag Hoisting Ceremony at Admin Block, Govt. Associate College Shadan Lund" style="background-image: url('flag-hoisting.jpg')" onclick="openSmogModal('flag-hoisting.jpg', 'National Flag Hoisting Ceremony', 'Faculty &amp; Staff at Admin Block (ایڈمن بلاک) — Govt. Associate College Shadan Lund')">
+<div class="w-full h-full bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-4">
+<span class="text-white text-xs font-bold bg-primary/80 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-secondary-fixed">flag</span> Admin Block: National Flag Hoisting Ceremony</span>
+</div>
+</div>
+<!-- Overlapping Mini Badge -->
+<div class="absolute -bottom-6 -right-4 bg-primary text-on-primary p-space-md rounded-xl shadow-xl max-w-[240px] hidden sm:block">
+<div class="flex items-center gap-space-xs text-secondary-fixed mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Government Certified</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Recognized by Higher Education Department Punjab</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-2">
+<div class="rounded-lg overflow-hidden shadow h-44 bg-cover bg-center group relative cursor-pointer" data-alt="Admissions &amp; Academic Counseling Desk" style="background-image: url('admissions-desk.jpg')" onclick="openSmogModal('admissions-desk.jpg', 'Admissions Helpdesk', 'Interactive Academic Counseling &amp; Admission Desk Active at GAC Shadan Lund')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-white text-[11px] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">how_to_reg</span> Admissions Helpdesk</span>
+</div>
+</div>
+<div class="rounded-lg overflow-hidden shadow h-44 bg-cover bg-center group relative cursor-pointer" data-alt="Spacious Campus Grounds &amp; Academic Wings" style="background-image: url('campus-panorama.jpg')" onclick="openSmogModal('campus-panorama.jpg', 'Campus Panoramic View', 'Academic Block &amp; Admin Block Grounds under Open Sunlit Skies')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/85 via-transparent to-transparent flex items-end p-2.5">
+<span class="text-white text-[11px] font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">landscape</span> Campus Panorama</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Textual Narrative -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Heritage of Higher Learning</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">A Beacon of Collegiate Dignity in Dera Ghazi Khan</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Founded in 1986 under the visionary roadmap of Punjab Higher Education Department, <strong class="text-on-surface">Govt. Associate College Shadan Lund</strong> has stood as an academic fortress along the historic Indus Highway corridor. We bridge the educational gap for thousands of energetic young men and women from rural and suburban belts of South Punjab.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Our college blends traditional values of personal integrity with contemporary scientific rigor. Fully equipped with cutting-edge science labs, high-speed IT workstations, vast botanical gardens, and a rich 25,000+ volume collegiate repository, we prepare students for direct admissions into top national universities and leadership roles across civil administration and commerce.
+        </p>
+<!-- Vision and Mission Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-primary mb-space-xs font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+              Our Vision
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">To cultivate visionary, self-reliant scholars anchored in civic responsibility and global competitiveness.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs text-primary mb-space-xs font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-secondary">track_changes</span>
+              Our Mission
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delivering uncompromising merit, modern infrastructure, and accessible collegiate education for South Punjab.</p>
+</div>
+</div>
+<div class="pt-space-xs flex items-center gap-space-md">
+<button onclick="openCharterModal()" class="inline-flex items-center gap-space-xs text-primary font-title-md text-title-md hover:text-primary-container transition-colors group cursor-pointer">
+<span class="font-semibold underline underline-offset-4 decoration-secondary">Read Institutional Charter &amp; History</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 05. PRINCIPAL'S MESSAGE (FORMAL SCHOLARLY FRAME) -->
+<section class="w-full bg-surface-container-low py-space-xl relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-2xl shadow-sm relative">
+<div class="absolute top-0 right-0 p-space-md opacity-5 select-none pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[180px]">format_quote</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Principal Portrait -->
+<div class="lg:col-span-4 flex flex-col items-center text-center">
+<div class="w-48 h-48 rounded-full overflow-hidden p-1.5 bg-gradient-to-tr from-secondary via-primary to-secondary-fixed shadow-md mb-space-sm">
+<img class="w-full h-full object-cover object-top rounded-full" data-alt="Dr. Imtiaz Ahmad - Principal Govt. Associate College Shadan Lund" src="principal.jpg"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Dr. Imtiaz Ahmad</h4>
+<p class="font-label-md text-label-md text-secondary font-semibold uppercase tracking-wider">Principal, GAC Shadan Lund</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ph.D. (Chemistry) — BZU Multan</p>
+<div class="mt-space-sm flex items-center gap-space-xs text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span>Govt. Gazetted Principal Officer</span>
+</div>
+</div>
+<!-- Principal Quote Text -->
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[32px]">format_quote</span>
+<span class="font-label-md text-label-md uppercase tracking-widest font-bold">Collegiate Leadership Message</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">
+              "We Do Not Simply Confer Diplomas; We Shape the Character of the Men and Women Who Will Lead Our Nation."
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+              "Education at Govt. Associate College Shadan Lund is rooted in the sacred conviction that talent in South Punjab knows no boundaries when nurtured with discipline, high moral fiber, and scholarly guidance. Whether you enter our physics laboratories, master computational logic in our computer centers, or explore classical humanities, our faculty members are pledged to your holistic development. I invite parents and ambitious youth to walk into our portals and witness an environment where merit reigns supreme."
+            </p>
+<!-- Signature block -->
+<div class="pt-space-xs flex items-center justify-between flex-wrap gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="p-space-xs bg-surface-container rounded font-serif italic text-primary text-lg font-bold select-none">
+Dr. Imtiaz Ahmad
+</div>
+<div class="h-8 w-[1px] bg-outline-variant"></div>
+<div class="text-label-sm font-label-sm text-on-surface-variant">
+<p class="font-semibold text-primary">Office of the Principal</p>
+<p>Govt. Associate College Shadan Lund</p>
+</div>
+</div>
+<button onclick="openPrincipalModal()" class="inline-flex items-center gap-space-xs text-label-md font-label-md uppercase tracking-wider text-secondary hover:text-on-secondary-container transition-colors font-semibold cursor-pointer">
+                Principal's Full Dispatch
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 06. ACADEMIC PROGRAMS & DEPARTMENTS -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile lg:px-margin" id="academic-programs">
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Curricula &amp; Pathways</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Distinctive Academic Disciplines</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Conforming rigorously to HED Punjab benchmarks, BISE D.G. Khan intermediate curricula, and accredited university Associate Degree pathways.</p>
+</div>
+<!-- Programs Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- F.Sc Pre-Medical -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant">2 Years (HSSC)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mb-space-xs">F.Sc Pre-Medical</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Rigorous coursework in Biology, Chemistry, and Physics geared specifically toward MDCAT excellence and medical careers.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-on-surface mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Modern Anatomy &amp; Botany Labs
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Weekly MDCAT Preparation Tests
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Affiliated with BISE D.G. Khan
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-primary font-label-md text-label-md group-hover:text-secondary transition-colors" href="#admissions-section">
+<span>Syllabus &amp; Seat Quota</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- F.Sc Pre-Engineering -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">engineering</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant">2 Years (HSSC)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mb-space-xs">F.Sc Pre-Engineering</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Comprehensive foundation in Mathematics, Advanced Physics, and Chemistry for future engineers and technologists.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-on-surface mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Analytical Math Mentorship
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              ECAT &amp; Entry Test Seminars
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Experimental Optics &amp; Mechanics
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-primary font-label-md text-label-md group-hover:text-secondary transition-colors" href="#admissions-section">
+<span>Syllabus &amp; Seat Quota</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- ICS (Computer Science) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant">2 Years (HSSC)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mb-space-xs">ICS Computer Science</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Programming logic, database basics, physics/statistics, and digital hardware architecture for modern IT careers.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-on-surface mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              C++ &amp; Python Fundamentals
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              High-Speed Fiber Connected Lab
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Physics or Statistics Pairing
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-primary font-label-md text-label-md group-hover:text-secondary transition-colors" href="#admissions-section">
+<span>Syllabus &amp; Seat Quota</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- I.Com (Commerce) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">account_balance</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant">2 Years (HSSC)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mb-space-xs">I.Com (Commerce)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Accounting principles, business mathematics, commercial geography, and foundational banking economy.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-on-surface mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Financial Bookkeeping Skills
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Banking &amp; Corporate Law Prep
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Direct Pathway to CA &amp; BBA
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-primary font-label-md text-label-md group-hover:text-secondary transition-colors" href="#admissions-section">
+<span>Syllabus &amp; Seat Quota</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- FA (Humanities & Social Sciences) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant">2 Years (HSSC)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold mb-space-xs">FA Humanities &amp; Arts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Classical literature, Islamic history, Civics, Education, and Urdu eloquence nurturing future civil servants.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-on-surface mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Urdu &amp; English Literary Societies
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              CSS / PMS Foundation Seminars
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+              Diverse Subject Electives
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-primary font-label-md text-label-md group-hover:text-secondary transition-colors" href="#admissions-section">
+<span>Syllabus &amp; Seat Quota</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- ADP Degree Programs -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-bright/20 text-surface-bright flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">workspace_premium</span>
+</div>
+<span class="text-label-sm font-label-sm bg-secondary text-on-secondary px-space-sm py-0.5 rounded font-semibold uppercase">Degree Program</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-surface-bright font-bold mb-space-xs">Associate Degree (ADP)</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mb-space-md">Two-year post-intermediate degree program affiliated with University of Ghazi / BZU Multan leading directly into BS 5th semester.</p>
+<ul class="space-y-space-xs text-body-sm font-body-sm text-surface-bright/90 mb-space-md">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">stars</span>
+              ADP in Computer Science (IT)
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">stars</span>
+              ADP in Commerce &amp; Accounting
+            </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">stars</span>
+              ADP in Botany, Zoology &amp; Chemistry
+            </li>
+</ul>
+</div>
+<a class="inline-flex items-center justify-between w-full pt-space-sm text-secondary-fixed font-label-md text-label-md group-hover:text-surface-bright transition-colors" href="#admissions-section">
+<span>ADP Details &amp; Semesters</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 07. WHY CHOOSE GAC SHADAN LUND (BENTO FEATURE ARRAY) -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">The Collegiate Edge</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Why Choose GAC Shadan Lund?</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Dedicated to delivering top-tier educational infrastructure without imposing exorbitant fees on hardworking rural and urban families.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Eminent Faculty Cadre</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Over 75+ Punjab Public Service Commission (PPSC) selected lecturers, assistant professors, and scholars dedicated to classroom mentorship.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">biotech</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Standardized Science &amp; IT Labs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fully functional physical and chemical experiment apparatus alongside high-speed internet computing labs updated to contemporary HED standards.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-primary-container/15 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">local_library</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">25,000+ Volume Library</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive central book repository featuring textbooks, encyclopedias, competitive exam digests, Urdu classics, and reference literature.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">sports_cricket</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Sports &amp; Athletic Pavilions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full-sized cricket oval, football field, volleyball court, and athletic tracks hosting annual intra-division collegiate tournaments.</p>
+</div>
+<!-- Feature 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">savings</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Affordable Subsidized Fees</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">As a premier Government Institution, our nominal semester fee ensures zero financial barrier for students from all economic strata.</p>
+</div>
+<!-- Feature 6 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">volunteer_activism</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Ehsaas &amp; Merit Scholarships</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full fee concessions, PEEF grants, Moray scholarship coverage, and student financial aid desks ensuring every deserving student thrives.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 08. ADMISSIONS TIMELINE & PROCEDURE -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile lg:px-margin" id="admissions-section">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg lg:p-space-xl shadow-sm">
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Merit-Based Process</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Admission Procedure 2026</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Follow these four straightforward steps to secure your seat at Govt. Associate College Shadan Lund.</p>
+</div>
+<!-- 4-Step Progressive Timeline -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="relative space-y-space-xs p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-sm flex items-center justify-center mb-space-sm font-bold shadow-md">
+              1
+            </div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Discipline &amp; Eligibility</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Review BISE SSC Matric results or HSSC Intermediate transcripts. Check the minimum aggregate cutoff for chosen discipline.</p>
+</div>
+<div class="pt-space-sm text-label-sm text-secondary font-semibold">Min. 60% for FSc / ICS</div>
+</div>
+<!-- Step 2 -->
+<div class="relative space-y-space-xs p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-sm flex items-center justify-center mb-space-sm font-bold shadow-md">
+              2
+            </div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Apply Online or On-Campus</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Submit through the official Punjab OCAS portal or collect the physical prospectus &amp; form directly from the College Admission Desk.</p>
+</div>
+<div class="pt-space-sm text-label-sm text-secondary font-semibold">OCAS Punjab Portal Live</div>
+</div>
+<!-- Step 3 -->
+<div class="relative space-y-space-xs p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-headline-sm flex items-center justify-center mb-space-sm font-bold shadow-md">
+              3
+            </div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Document Verification</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bring original Matric result card, CNIC / B-Form, domicile certificate, and character certificate to the departmental scrutiny committee.</p>
+</div>
+<div class="pt-space-sm text-label-sm text-secondary font-semibold">Merit Lists: 1st, 2nd &amp; 3rd</div>
+</div>
+<!-- Step 4 -->
+<div class="relative space-y-space-xs p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-headline-sm flex items-center justify-center mb-space-sm font-bold shadow-md">
+              4
+            </div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Fee &amp; Orientation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Deposit the government admission challan at National Bank of Pakistan (NBP) Shadan Lund Branch and attend the Student Orientation Day.</p>
+</div>
+<div class="pt-space-sm text-label-sm text-primary font-semibold">College Uniform &amp; Roll No.</div>
+</div>
+</div>
+<!-- Action Panel inside Admissions -->
+<div class="mt-space-xl p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="space-y-0.5 text-center sm:text-left">
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Need Personal Guidance Regarding Elective Combinations?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our Academic Counseling cell is open daily from 8:00 AM to 2:00 PM for all candidates.</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button onclick="downloadProspectus()" class="inline-flex items-center gap-space-xs bg-surface-container-lowest hover:bg-surface-bright text-primary font-label-md text-label-md px-space-md py-space-sm rounded transition-all shadow-sm cursor-pointer font-semibold">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Download Prospectus
+          </button>
+<button onclick="openMeritCalculator()" class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-md py-space-sm rounded transition-all shadow-sm cursor-pointer font-semibold">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+            Merit Calculator
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 09. NEWS, ANNOUNCEMENTS & INSTITUTIONAL EVENTS -->
+<section class="w-full bg-surface-container-low py-space-xl" id="news-section">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Happenings &amp; Updates</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Campus News &amp; Events</h2>
+</div>
+<button onclick="openNoticesModal()" class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary hover:text-secondary font-semibold uppercase tracking-wider cursor-pointer">
+          View All College Notices
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- News Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group border border-outline-variant/30">
+<div>
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 cursor-pointer" data-alt="Admissions Desk at Govt. Associate College Shadan Lund" style="background-image: url('admissions-desk.jpg')" onclick="openSmogModal('admissions-desk.jpg', 'Admissions Helpdesk Active', 'Academic Counseling &amp; Admission Portal Live for Intermediate &amp; ADP Candidates')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Admissions 2026 • Live Helpdesk</span>
+<h3 class="font-title-md text-title-md text-primary font-bold group-hover:text-primary-container transition-colors">
+Admissions 2026: On-Campus Counseling Desk Active for All Disciplines
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Faculty members at the dedicated admissions desk are actively guiding candidates for F.Sc (Pre-Medical &amp; Pre-Engineering), ICS, I.Com, and FA with transparent merit lists, fee structures, and scholarship criteria.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a href="#admissions-section" class="text-label-md font-label-md text-primary font-semibold group-hover:underline inline-flex items-center gap-1">Admissions Information →</a>
+</div>
+</div>
+<!-- News Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group border border-emerald-100">
+<div>
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 cursor-pointer" data-alt="Anti Smog Seminar and Awareness Activity at Govt Associate College Shahdan Lund library" style="background-image: url('anti-smog-seminar.jpg')" onclick="openSmogModal('anti-smog-seminar.jpg', 'Anti-Smog Seminar &amp; Awareness Activity', 'Cleaner Air = Healthier Tomorrow • Presided by Principal Dr. Imtiaz Ahmad at the Central Library')"></div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded-full font-bold uppercase">
+<span class="material-symbols-outlined text-[13px]">eco</span> Anti-Smog Drive
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">HED Punjab • 2026</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary font-bold group-hover:text-primary-container transition-colors">
+Anti-Smog Seminar &amp; Awareness Campaign: Cleaner Air = Healthier Tomorrow
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Under the leadership of Principal Dr. Imtiaz Ahmad, students and faculty convened an anti-smog seminar and awareness drive in the central library to institute preventive health measures and environmental protection directives.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<a href="#anti-smog" class="text-label-md font-label-md text-primary font-semibold group-hover:underline inline-flex items-center gap-1">Read Full Activity Report →</a>
+</div>
+</div>
+<!-- News Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group border border-outline-variant/30">
+<div>
+<div class="h-48 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 cursor-pointer" data-alt="Academic Block Night Illumination and National Celebrations" style="background-image: url('campus-night.jpg')" onclick="openSmogModal('campus-night.jpg', 'Academic Block Night Illumination', 'Academic Block (اکیڈمک بلاک) Decorated in Festive Green &amp; White Lights Celebrating Peace, Security &amp; Solidarity')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Campus Events • Celebrations</span>
+<h3 class="font-title-md text-title-md text-primary font-bold group-hover:text-primary-container transition-colors">
+Academic Block Night Illumination: Unity, Security &amp; Solidarity
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+The collegiate Academic Block (اکیڈمک بلاک) was illuminated in resplendent green and white lights during campus celebrations honoring peace, security, and institutional pride.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button onclick="openSmogModal('campus-night.jpg', 'Academic Block Night Illumination', 'Academic Block (اکیڈمک بلاک) Decorated in Festive Green &amp; White Lights Celebrating Peace, Security &amp; Solidarity')" class="text-label-md font-label-md text-primary font-semibold group-hover:underline inline-flex items-center gap-1">View Night Illumination →</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 09B. SPECIAL SHOWCASE: ANTI-SMOG AWARENESS & GREEN ACTION CAMPAIGN -->
+<section id="anti-smog" class="w-full bg-gradient-to-b from-[#eaf5ee] via-[#f7fbf8] to-[#eef7f1] border-y border-emerald-900/10 py-space-xl relative overflow-hidden">
+<!-- Ambient background glow elements -->
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin relative z-10">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-emerald-800 text-emerald-50 px-space-md py-1 rounded-full text-label-sm font-label-md uppercase tracking-widest shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-emerald-300">eco</span>
+<span>HED Punjab Environmental Directive • Green Campus Initiative</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary tracking-tight">
+Anti-Smog Awareness &amp; Clean Air Campaign
+</h2>
+<p class="font-title-lg text-title-md lg:text-title-lg text-emerald-800 font-semibold italic">
+“Cleaner Air = Healthier Tomorrow • Let’s Fight Smog Together”
+</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+Under the leadership of the Principal, Govt. Associate College Shahdan Lund, students and faculty organized dedicated anti-smog seminars, classroom workshops, and community pledges to combat environmental pollution and protect public health.
+</p>
+</div>
+
+<!-- Dual Asymmetric Unique Activity Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl mb-space-xl items-stretch">
+<!-- Card 1: Library Seminar -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-lg border border-emerald-900/10 overflow-hidden flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div class="p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-900 font-label-md text-label-sm px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] text-emerald-700">local_library</span> Central Library Forum
+</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase">Official Faculty &amp; Student Dialogue</span>
+</div>
+
+<div class="relative rounded-xl overflow-hidden shadow-md aspect-video cursor-pointer group/img" onclick="openSmogModal('anti-smog-seminar.jpg', 'Anti-Smog Seminar &amp; Awareness Activity', 'Cleaner Air = Healthier Tomorrow • Presided by Principal Govt. Associate College Shahdan Lund at the Central Library')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105" style="background-image: url('anti-smog-seminar.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover/img:opacity-90 transition-opacity flex items-end justify-between p-4">
+<span class="text-white text-xs font-semibold tracking-wide flex items-center gap-1 bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-emerald-300">verified</span> Principal’s Keynote Address
+</span>
+<span class="bg-surface-bright text-primary text-xs font-bold px-3 py-1 rounded-full shadow inline-flex items-center gap-1 group-hover/img:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[15px]">zoom_in</span> Zoom Photo
+</span>
+</div>
+</div>
+
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+Principal’s Anti-Smog Policy Dialogue &amp; Health Briefing
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Conducted in the college central library, the seminar brought together faculty members, department heads, and intermediate scholars to establish institutional protocols against seasonal smog. The session highlighted strategic precautions to minimize student health risks during peak hazardous Air Quality Index (AQI) periods.
+</p>
+</div>
+
+<!-- Highlighted Takeaways -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md space-y-2 border border-emerald-900/5">
+<p class="font-label-md text-label-sm uppercase tracking-wider text-emerald-800 font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">task_alt</span> Core Seminar Directives
+</p>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-2 shrink-0"></span>
+<span><strong>AQI Monitoring:</strong> Scheduling indoor assemblies and physical education pauses on red-alert smog days.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-2 shrink-0"></span>
+<span><strong>Student Hygiene Defense:</strong> Compulsory mask protocol, regular water hydration, and eye protection routines.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mt-2 shrink-0"></span>
+<span><strong>Zero Campus Emissions:</strong> Full ban on open refuse disposal and motor idling inside college grounds.</span>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="p-space-md lg:p-space-lg pt-0 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Venue: Central Library Conference Table</span>
+<button onclick="openSmogModal('anti-smog-seminar.jpg', 'Anti-Smog Seminar &amp; Awareness Activity', 'Cleaner Air = Healthier Tomorrow • Presided by Principal Govt. Associate College Shahdan Lund at the Central Library')" class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-bold hover:text-secondary transition-colors">
+Inspect Photo <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+
+<!-- Card 2: Classroom Workshop -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-lg border border-emerald-900/10 overflow-hidden flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+<div class="p-space-md lg:p-space-lg space-y-space-md">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 bg-secondary-fixed/50 text-secondary-fixed-variant font-label-md text-label-sm px-3 py-1 rounded-full font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px] text-secondary">school</span> Academic Wing Lecture
+</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase">Student Outreach &amp; Law Awareness</span>
+</div>
+
+<div class="relative rounded-xl overflow-hidden shadow-md aspect-video cursor-pointer group/img" onclick="openSmogModal('anti-smog-classroom.jpg', 'Classroom Anti-Smog Interactive Activity', 'Anti-Smog Awareness &amp; Punjab Local Government Act 2022 Legal Directives • Interactive Student Session')">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover/img:scale-105" style="background-image: url('anti-smog-classroom.jpg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-80 group-hover/img:opacity-90 transition-opacity flex items-end justify-between p-4">
+<span class="text-white text-xs font-semibold tracking-wide flex items-center gap-1 bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed">gavel</span> Punjab Local Govt Act 2022
+</span>
+<span class="bg-surface-bright text-primary text-xs font-bold px-3 py-1 rounded-full shadow inline-flex items-center gap-1 group-hover/img:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[15px]">zoom_in</span> Zoom Photo
+</span>
+</div>
+</div>
+
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">
+Student Preventive Workshop &amp; Legal Stubble Burning Directives
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+Dedicated lecture conducted for intermediate and associate degree scholars focusing on the statutory provisions of the Punjab Local Government Act 2022. The session instructed students on the legal prohibitions and criminal liabilities (FIRs and fines) against burning crops, leaves, and plastics.
+</p>
+</div>
+
+<!-- Highlighted Takeaways -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md space-y-2 border border-emerald-900/5">
+<p class="font-label-md text-label-sm uppercase tracking-wider text-emerald-800 font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">campaign</span> Student Ambassador Responsibilities
+</p>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<span><strong>Legal Consciousness:</strong> Educating agrarian families against stubble combustion under penalty of law.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<span><strong>Personal Safety Practice:</strong> Wearing masks, washing eyes frequently, and limiting direct contact with smog.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-2 shrink-0"></span>
+<span><strong>Afforestation Commitment:</strong> Active participation in tree-planting campaigns across the college perimeter.</span>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="p-space-md lg:p-space-lg pt-0 border-t border-surface-container-high/60 flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Venue: Senior Lecture Hall, Academic Block</span>
+<button onclick="openSmogModal('anti-smog-classroom.jpg', 'Classroom Anti-Smog Interactive Activity', 'Anti-Smog Awareness &amp; Punjab Local Government Act 2022 Legal Directives • Interactive Student Session')" class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-bold hover:text-secondary transition-colors">
+Inspect Photo <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- 4-Pillar Environmental Action Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm p-space-md rounded-xl border border-emerald-900/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-800">
+<span class="material-symbols-outlined text-[22px]">masks</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Health Protocols</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+Distribution of preventive mask advisories and routine eye-cleansing protocols for all enrolled students.
+</p>
+</div>
+
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm p-space-md rounded-xl border border-emerald-900/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">local_fire_department</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Zero Waste Burning</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+Strict campus compliance with Punjab Local Government Act 2022; zero tolerance for burning leaves or plastics.
+</p>
+</div>
+
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm p-space-md rounded-xl border border-emerald-900/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-800">
+<span class="material-symbols-outlined text-[22px]">park</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Green Bio-Buffers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+Active tree plantation along the Indus Highway border to filter highway dust, smoke, and particulate pollutants.
+</p>
+</div>
+
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm p-space-md rounded-xl border border-emerald-900/10 shadow-sm flex flex-col gap-2">
+<div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-800">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary font-bold">Civic Ambassadors</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+Empowering students to educate rural households and local farming circles on eco-friendly residue disposal.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. STUDENT LIFE & MASONRY GALLERY -->
+<section class="w-full bg-surface-container py-space-xl" id="gallery-section">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Campus Life</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Moments of Discovery &amp; Camaraderie</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">A vibrant collegiate ecosystem beyond textbook instruction: sports, scientific debate, and lifelong friendships.</p>
+</div>
+<!-- Masonry-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Column 1 -->
+<div class="space-y-space-md">
+<div class="h-64 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="Spacious Campus Grounds &amp; Academic Blocks" style="background-image: url('campus-panorama.jpg')" onclick="openSmogModal('campus-panorama.jpg', 'Campus Panoramic View', 'Academic &amp; Admin Blocks Surrounded by Lush Lawns and Open Sky')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">landscape</span> Campus Panorama</span>
+<p class="text-white text-xs font-semibold">Expansive Grounds &amp; Academic Wings</p>
+</div>
+</div>
+<div class="h-48 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="Shaded Tree Walkway &amp; College Boundary Lawns" style="background-image: url('campus-tree-path.jpg')" onclick="openSmogModal('campus-tree-path.jpg', 'Tree-Lined Green Walkway', 'Shaded Campus Pathway Bordered by Trees and College Boundary Lawns')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">forest</span> Nature &amp; Serenity</span>
+<p class="text-white text-xs font-semibold">Tree-Lined Boulevard &amp; Lawns</p>
+</div>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="space-y-space-md">
+<div class="h-56 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="Open Sports Grounds &amp; Athletic Field" style="background-image: url('sports-ground.jpg')" onclick="openSmogModal('sports-ground.jpg', 'Spacious College Sports Oval', 'Wide Open Campus Athletic Grounds for Sports, Physical Fitness &amp; Tournaments')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">sports_soccer</span> Sports Grounds</span>
+<p class="text-white text-xs font-semibold">Spacious Athletic Field &amp; Cricket Oval</p>
+</div>
+</div>
+<div class="h-56 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="Peaceful Paved Campus Walkway &amp; Lawns" style="background-image: url('campus-walkway.jpg')" onclick="openSmogModal('campus-walkway.jpg', 'Campus Pathways &amp; Greenery', 'Paved Campus Walkway, Lamppost &amp; Green Lawns')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">park</span> Green Environment</span>
+<p class="text-white text-xs font-semibold">Peaceful Paved Walkways &amp; Lawns</p>
+</div>
+</div>
+</div>
+<!-- Column 3 -->
+<div class="space-y-space-md">
+<div class="h-64 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="National Flag Hoisting at Admin Block" style="background-image: url('flag-hoisting.jpg')" onclick="openSmogModal('flag-hoisting.jpg', 'National Flag Hoisting Ceremony', 'Faculty &amp; Staff at Admin Block (ایڈمن بلاک) — Govt. Associate College Shadan Lund')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">flag</span> National Honor</span>
+<p class="text-white text-xs font-semibold">Flag Hoisting at Admin Block</p>
+</div>
+</div>
+<div class="h-48 rounded-xl overflow-hidden shadow-sm bg-cover bg-center relative group cursor-pointer transition-transform duration-300 hover:scale-[1.02]" data-alt="Collegiate Central Courtyard &amp; Red Brick Architecture" style="background-image: url('campus-courtyard.jpg')" onclick="openSmogModal('campus-courtyard.jpg', 'Central Courtyard &amp; Architecture', 'Red-Brick Facade &amp; Courtyard of Govt. Associate College Shadan Lund')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-space-sm opacity-90 group-hover:opacity-100 transition-opacity">
+<span class="text-[11px] font-bold uppercase tracking-wider text-secondary-fixed flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">domain</span> Architecture</span>
+<p class="text-white text-xs font-semibold">Collegiate Courtyard &amp; Wings</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. CAMPUS ACADEMIC & CULTURAL LIFE SHOWCASE -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile lg:px-margin" id="student-activities">
+<div class="text-center max-w-3xl mx-auto mb-space-xl space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-secondary-fixed/50 text-secondary-fixed-variant px-space-md py-1 rounded-full text-label-sm font-label-md uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+Academic Excellence &amp; Campus Culture
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary">Student Life, Examinations &amp; Gatherings</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Real glimpses of daily academic rigor, spiritual heritage, and literary excellence at Govt. Associate College Shadan Lund.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Activity Card 1: Seerat Conference -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="h-48 w-full bg-cover bg-center cursor-pointer transition-transform duration-500 group-hover:scale-105" style="background-image: url('seerat-conference.jpg')" onclick="openSmogModal('seerat-conference.jpg', 'Seerat-un-Nabi ﷺ Conference', 'Annual Eid Milad-un-Nabi ﷺ Gathering &amp; Seerat Conference in the Central Library under Patronage of Principal GAC Shadan Lund')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Spiritual Heritage</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Seerat-un-Nabi ﷺ Conference</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Held in the college central library, students gather to honor the sacred teachings of the Holy Prophet ﷺ with profound devotion.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button onclick="openSmogModal('seerat-conference.jpg', 'Seerat-un-Nabi ﷺ Conference', 'Annual Eid Milad-un-Nabi ﷺ Gathering &amp; Seerat Conference in the Central Library under Patronage of Principal GAC Shadan Lund')" class="text-label-md font-label-md text-primary font-semibold hover:underline inline-flex items-center gap-1">View Full Photo →</button>
+</div>
+</div>
+<!-- Activity Card 2: Examination Hall -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="h-48 w-full bg-cover bg-center cursor-pointer transition-transform duration-500 group-hover:scale-105" style="background-image: url('examination-hall.jpg')" onclick="openSmogModal('examination-hall.jpg', 'Examination &amp; Assessment Hall', 'Students Writing Annual Board &amp; College Assessment Papers under Strict Academic Discipline')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Academic Evaluation</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Annual Examination Hall</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Spacious, well-organized exam halls ensuring complete discipline, merit, and adherence to BISE D.G. Khan testing standards.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button onclick="openSmogModal('examination-hall.jpg', 'Examination &amp; Assessment Hall', 'Students Writing Annual Board &amp; College Assessment Papers under Strict Academic Discipline')" class="text-label-md font-label-md text-primary font-semibold hover:underline inline-flex items-center gap-1">View Full Photo →</button>
+</div>
+</div>
+<!-- Activity Card 3: Library Study -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="h-48 w-full bg-cover bg-center cursor-pointer transition-transform duration-500 group-hover:scale-105" style="background-image: url('library-study.jpg')" onclick="openSmogModal('library-study.jpg', 'Central Library Study Session', 'Students Preparing for Board Examinations around Spacious Wooden Study Desks')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Knowledge Sanctuary</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Central Library Reading Tables</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Equipped with thousands of textbooks and reference volumes, students utilize long study desks for quiet preparation.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button onclick="openSmogModal('library-study.jpg', 'Central Library Study Session', 'Students Preparing for Board Examinations around Spacious Wooden Study Desks')" class="text-label-md font-label-md text-primary font-semibold hover:underline inline-flex items-center gap-1">View Full Photo →</button>
+</div>
+</div>
+<!-- Activity Card 4: Speech & Debate -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/30 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<div class="h-48 w-full bg-cover bg-center cursor-pointer transition-transform duration-500 group-hover:scale-105" style="background-image: url('student-speech.jpg')" onclick="openSmogModal('student-speech.jpg', 'Student Speech &amp; Debate Forum', 'Student Delivering an Address at the Wooden Rostrum during Collegiate Literary Gathering')"></div>
+<div class="p-space-md space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Literary Development</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Speech &amp; Student Rostrum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+Promoting eloquence, public speaking, and intellectual dialogue through inter-collegiate Urdu and English debates.
+</p>
+</div>
+</div>
+<div class="p-space-md pt-0">
+<button onclick="openSmogModal('student-speech.jpg', 'Student Speech &amp; Debate Forum', 'Student Delivering an Address at the Wooden Rostrum during Collegiate Literary Gathering')" class="text-label-md font-label-md text-primary font-semibold hover:underline inline-flex items-center gap-1">View Full Photo →</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 13. PRESTIGIOUS CALL TO ACTION (DEEP EMERALD & GOLD) -->
+<section class="w-full bg-primary text-on-primary py-space-xl relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fdd275_1px,transparent_1px)] [background-size:20px_20px]"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin relative z-10 text-center space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-secondary text-on-secondary px-space-md py-space-xs rounded-full text-label-sm font-label-md uppercase tracking-widest font-semibold">
+<span class="material-symbols-outlined text-[16px]">school</span>
+        Secure Your Future in Higher Education
+      </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-surface-bright max-w-3xl mx-auto leading-tight">
+        Your Journey to Academic Excellence Begins at GAC Shadan Lund
+      </h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-2xl mx-auto">
+        Join South Punjab's most trusted public associate college. Transparent admissions, subsidized government tuition, and dedicated mentorship.
+      </p>
+<div class="pt-space-sm flex flex-wrap items-center justify-center gap-space-md">
+<button onclick="openApplyModal()" class="inline-flex items-center gap-space-xs bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-title-md text-title-md px-space-xl py-space-md rounded transition-all shadow-lg font-semibold cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+          Apply for Admission Fall 2026
+        </button>
+<a class="inline-flex items-center gap-space-xs bg-surface-bright/10 hover:bg-surface-bright/20 text-surface-bright font-title-md text-title-md px-space-xl py-space-md rounded transition-all" href="#contact-section">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">headset_mic</span>
+          Contact Admission Helpdesk
+        </a>
+</div>
+</div>
+</section>
+<!-- 14. CONTACT SECTION & CAMPUS LOCATION -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-margin-mobile lg:px-margin" id="contact-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Inquiries & Verification Form -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-2xl shadow-sm space-y-space-md">
+<div class="space-y-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Direct Institutional Helpdesk</span>
+<h3 class="font-headline-md text-headline-md text-primary">Send an Admission Inquiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Have questions regarding merit cutoffs, fee exemptions, or subject combinations? Our academic desk will respond promptly.</p>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); alert('Inquiry received. The GAC Shadan Lund Academic Office will contact you shortly.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Student Full Name *</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Ahmad Hassan" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">CNIC or B-Form No. *</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="32102-XXXXXXX-X" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Candidate City / Union Council *</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Shadan Lund, Taunsa, D.G. Khan" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Previous School / Institute *</label>
+<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Govt High School Shadan Lund" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Desired Academic Program *</label>
+<select class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="fsc-pre-med">F.Sc Pre-Medical</option>
+<option value="fsc-pre-eng">F.Sc Pre-Engineering</option>
+<option value="ics">ICS (Physics / Statistics)</option>
+<option value="icom">I.Com Commerce</option>
+<option value="fa">FA Humanities &amp; General Science</option>
+<option value="adp">Associate Degree Program (ADP)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1">Matriculation / Intermediate Marks Details &amp; Message</label>
+<textarea class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Provide obtained marks/total marks and any specific questions regarding hostel, transport, or scholarships..." rows="3"></textarea>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-md rounded font-label-md text-label-md tracking-wider uppercase font-semibold transition-colors shadow" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+            Transmit Inquiry to Admission Cell
+          </button>
+</form>
+</div>
+<!-- Right: Location & Institutional Details -->
+<div class="lg:col-span-6 space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="p-space-lg rounded-2xl bg-surface-container space-y-space-sm">
+<h4 class="font-title-lg text-title-lg text-primary font-bold">Campus Location &amp; Physical Address</h4>
+<div class="space-y-space-sm text-body-md font-body-md text-on-surface-variant">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">pin_drop</span>
+<div>
+<p class="font-semibold text-primary">Govt. Associate College Shadan Lund</p>
+<p>Indus Highway (N-55), Post Office Shadan Lund, District Dera Ghazi Khan, Punjab, Pakistan.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">location_city</span>
+<span><strong>Campus Office:</strong> Admin Block &amp; Principal Office, GAC Shadan Lund</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">how_to_reg</span>
+<span><strong>Admissions Helpdesk:</strong> In-Person Prospectus &amp; Form Verification Desk</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0">schedule</span>
+<span><strong>Office Hours:</strong> Monday – Saturday: 08:00 AM to 02:00 PM (Friday: Closes at 12:30 PM)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Map View -->
+<div class="w-full h-64 rounded-2xl bg-cover bg-center shadow-inner relative overflow-hidden" data-location="Shadan Lund, Dera Ghazi Khan, Punjab, Pakistan" style="background-image: url('campus-panorama.jpg')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-lg flex items-center justify-between shadow">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+<span>Located directly on Indus Highway (N-55)</span>
+</div>
+<a class="text-label-sm font-label-sm text-primary font-bold underline" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">Open in Maps</a>
+</div>
+</div>
+</div>
+<!-- Emergency / Student Welfare Quick Badge -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors shadow-sm" onclick="openGrievanceModal()">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">support_agent</span>
+<div>
+<p class="font-title-md text-title-md text-primary font-semibold">Anti-Harassment &amp; Student Grievance Cell</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Confidential support mandated under HED Punjab regulations.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary text-on-primary mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-md"><img alt="GAC Shadan Lund College Emblem" class="h-14 w-14 object-contain bg-surface-bright/10 p-1.5 rounded-full drop-shadow" src="logo.svg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-bright uppercase leading-tight">GAC Shadan Lund</span><span class="font-label-sm text-label-sm text-secondary-fixed">Est. Government Institution</span></div></div><p class="font-body-sm text-body-sm text-surface-container-highest/80 leading-relaxed">Providing accessible, rigorous academic and intermediate degree pathways for the youth of D.G. Khan Division with dignity, merit, and collegiate scholarship.</p><div class="flex items-center gap-space-sm text-secondary-fixed"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-sm text-label-sm text-surface-bright">HED Punjab Recognized Campus</span></div></div><div class="space-y-space-md"><h4 class="font-title-md text-title-md text-secondary-fixed uppercase tracking-wider">Quick Links</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-highest/80"><li><button onclick="openPrincipalModal()" class="hover:text-surface-bright transition-colors text-left cursor-pointer">Principal's Message</button></li><li><button onclick="openApplyModal()" class="hover:text-surface-bright transition-colors text-left cursor-pointer">Online Admission Portal</button></li><li><button onclick="openNoticesModal()" class="hover:text-surface-bright transition-colors text-left cursor-pointer">BISE Intermediate Merit Lists</button></li><li><button onclick="openNoticesModal()" class="hover:text-surface-bright transition-colors text-left cursor-pointer">Examination Schedules</button></li><li><button onclick="openCodeOfConductModal()" class="hover:text-surface-bright transition-colors text-left cursor-pointer">Student Code of Conduct</button></li><li><a class="hover:text-surface-bright transition-colors" href="#gallery-section">Campus Facilities &amp; Gallery</a></li></ul></div><div class="space-y-space-md"><h4 class="font-title-md text-title-md text-secondary-fixed uppercase tracking-wider">Academic Wings</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-container-highest/80"><li><span class="font-label-md text-label-md text-surface-bright block">Natural Sciences Wing</span>F.Sc. Pre-Medical &amp; Pre-Engineering</li><li><span class="font-label-md text-label-md text-surface-bright block">Computer Science Wing</span>ICS (Physics &amp; Statistics)</li><li><span class="font-label-md text-label-md text-surface-bright block">Humanities &amp; Arts Wing</span>F.A. General &amp; Social Sciences</li><li><span class="font-label-md text-label-md text-surface-bright block">Associate Degree Programs</span>ADP Science &amp; ADP Arts</li></ul></div><div class="space-y-space-md"><h4 class="font-title-md text-title-md text-secondary-fixed uppercase tracking-wider">Admissions Helpdesk</h4><div class="space-y-space-sm font-body-sm text-body-sm text-surface-container-highest/80"><p class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed shrink-0 mt-0.5">location_on</span><span>Govt. Associate College, Indus Highway, Shadan Lund, District Dera Ghazi Khan, Punjab.</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed shrink-0">meeting_room</span><span>Admin Block: In-Person Academic Helpdesk</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed shrink-0">school</span><span>BISE D.G. Khan &amp; HED Punjab Affiliated</span></p><div class="pt-space-xs"><span class="inline-block font-label-sm text-label-sm bg-surface-bright/10 text-surface-bright px-space-sm py-space-xs rounded">Office Hours: 08:00 AM - 02:00 PM (Mon-Sat)</span></div></div></div></div><div class="pt-space-md border-t border-surface-container-highest/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-surface-container-highest/70">© 2026 Govt. Associate College Shadan Lund. All rights reserved.</p><p class="font-label-sm text-label-sm text-secondary-fixed/90">Affiliated with Board of Intermediate &amp; Secondary Education (BISE) D.G. Khan &amp; Higher Education Department (HED) Punjab.</p></div></div></footer>
+<!-- Lightbox Image Modal for Anti-Smog & College Activities -->
+<div id="smogModal" class="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300" onclick="if(event.target === this) closeSmogModal()">
+<div class="relative max-w-4xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-white/20 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">photo_camera</span>
+<h3 id="modalTitle" class="font-title-md text-title-md font-bold text-surface-bright">Activity Preview</h3>
+</div>
+<button onclick="closeSmogModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-black/95 flex items-center justify-center p-2 max-h-[75vh] overflow-hidden">
+<img id="modalImg" src="" alt="Activity Preview" class="max-h-[70vh] w-auto max-w-full object-contain rounded shadow-lg"/>
+</div>
+<div class="p-4 bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-t border-outline-variant/30">
+<p id="modalDesc" class="font-body-sm text-body-sm text-on-surface-variant font-medium">Govt. Associate College Shadan Lund</p>
+<button onclick="closeSmogModal()" class="self-end sm:self-auto px-4 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary text-label-md font-semibold transition-colors">Close</button>
+</div>
+</div>
+</div>
+
+<!-- 1. ONLINE ADMISSION APPLICATION MODAL -->
+<div id="applyModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeApplyModal()">
+<div class="relative max-w-2xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<img src="logo.svg" alt="GAC Crest" class="w-8 h-8"/>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">Online Admission Registration 2026</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Govt. Associate College Shadan Lund</p>
+</div>
+</div>
+<button onclick="closeApplyModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6">
+<form id="applyForm" onsubmit="submitApplyForm(event)" class="space-y-4">
+<div class="bg-primary/5 p-3 rounded-lg border border-primary/10 text-xs text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">info</span>
+<span>Submit your preliminary registration. An official voucher will be generated immediately for verification.</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Student Full Name *</label>
+<input id="appStudentName" required type="text" placeholder="e.g. Muhammad Ali" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Father's Name *</label>
+<input id="appFatherName" required type="text" placeholder="e.g. Ghulam Rasool" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">B-Form / CNIC No. *</label>
+<input id="appCnic" required type="text" placeholder="32102-XXXXXXX-X" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Domicile District *</label>
+<select id="appDistrict" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
+<option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+<option value="Taunsa Sharif">Taunsa Sharif</option>
+<option value="Rajanpur">Rajanpur</option>
+<option value="Muzaffargarh">Muzaffargarh</option>
+<option value="Other Punjab District">Other Punjab District</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Select Desired Academic Program *</label>
+<select id="appProgram" required class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
+<option value="F.Sc Pre-Medical (Biology, Chemistry, Physics)">F.Sc Pre-Medical (Biology, Chemistry, Physics)</option>
+<option value="F.Sc Pre-Engineering (Math, Chemistry, Physics)">F.Sc Pre-Engineering (Math, Chemistry, Physics)</option>
+<option value="ICS Computer Science (Physics / Statistics)">ICS Computer Science (Physics / Statistics)</option>
+<option value="FA Humanities & General Science">FA Humanities &amp; General Science</option>
+<option value="I.Com Commerce & Accounting">I.Com Commerce &amp; Accounting</option>
+<option value="Associate Degree Program (ADP Science / Arts)">Associate Degree Program (ADP Science / Arts)</option>
+</select>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Matric Obtained Marks *</label>
+<input id="appMatricObt" required type="number" min="300" max="1100" placeholder="e.g. 920" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Matric Total Marks *</label>
+<input id="appMatricTotal" required type="number" value="1100" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Calculated Merit %</label>
+<input id="appMeritPercent" readonly type="text" value="0.00%" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/30 bg-surface-container font-bold text-primary focus:outline-none"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Permanent Residential Address</label>
+<input id="appAddress" type="text" placeholder="Village / Tehsil / Union Council" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div class="pt-2 flex items-center justify-end gap-3">
+<button type="button" onclick="closeApplyModal()" class="px-4 py-2 rounded text-sm text-on-surface-variant hover:bg-surface-container transition-colors">Cancel</button>
+<button type="submit" class="px-6 py-2 rounded bg-secondary hover:bg-secondary-fixed text-surface-bright text-sm font-semibold shadow transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+Generate Admission Voucher
+</button>
+</div>
+</form>
+
+<!-- Generated Voucher Display (hidden by default) -->
+<div id="applySuccessSlip" class="hidden space-y-4">
+<div class="p-4 bg-emerald-50 border-2 border-emerald-500 rounded-xl space-y-3">
+<div class="flex items-center justify-between border-b border-emerald-200 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-700 text-[26px]">check_circle</span>
+<span class="font-bold text-emerald-900 text-sm">Application Pre-Registration Received</span>
+</div>
+<span id="slipVoucherNo" class="bg-emerald-700 text-white font-mono px-2 py-0.5 rounded text-xs font-bold">GAC-2026-0000</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div><span class="text-gray-500">Candidate:</span> <strong id="slipName" class="text-gray-900 block font-semibold">-</strong></div>
+<div><span class="text-gray-500">Father's Name:</span> <strong id="slipFather" class="text-gray-900 block font-semibold">-</strong></div>
+<div><span class="text-gray-500">CNIC / B-Form:</span> <strong id="slipCnic" class="text-gray-900 block font-semibold">-</strong></div>
+<div><span class="text-gray-500">Program:</span> <strong id="slipProgram" class="text-gray-900 block font-semibold">-</strong></div>
+<div><span class="text-gray-500">Matric Marks:</span> <strong id="slipMarks" class="text-gray-900 block font-semibold">-</strong></div>
+<div><span class="text-gray-500">Calculated Merit:</span> <strong id="slipPercent" class="text-emerald-800 block font-bold">-</strong></div>
+</div>
+<div class="text-[11px] text-emerald-800 bg-emerald-100/60 p-2 rounded">
+<strong>Verification Instructions:</strong> Please present this application reference slip at GAC Shadan Lund Admin Block along with your original Matric result card and domicile certificate.
+</div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<button onclick="window.print()" class="px-4 py-2 rounded border border-outline-variant text-sm font-semibold text-primary hover:bg-surface-container flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">print</span> Print Slip
+</button>
+<button onclick="closeApplyModal()" class="px-6 py-2 rounded bg-primary hover:bg-primary-container text-white text-sm font-semibold transition-colors">Done</button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 2. MERIT CALCULATOR MODAL -->
+<div id="meritCalcModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeMeritCalculator()">
+<div class="relative max-w-xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">calculate</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">BISE D.G. Khan Merit Calculator</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Check Your Program Eligibility Instantly</p>
+</div>
+</div>
+<button onclick="closeMeritCalculator()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Matric Obtained Marks *</label>
+<input id="calcObt" type="number" min="0" max="1100" value="950" oninput="runLiveMeritCalc()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low font-bold text-primary focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-primary mb-1">Total Marks *</label>
+<input id="calcTotal" type="number" min="1" max="1100" value="1100" oninput="runLiveMeritCalc()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low font-bold text-primary focus:ring-2 focus:ring-primary focus:outline-none"/>
+</div>
+</div>
+
+<div class="bg-primary/5 p-4 rounded-xl border border-primary/10 flex items-center justify-between">
+<div>
+<span class="text-xs text-on-surface-variant font-medium">Your Aggregate Percentage:</span>
+<h2 id="calcResultDisplay" class="font-display-md text-3xl font-extrabold text-primary">86.36%</h2>
+<span id="calcStatusBadge" class="inline-block mt-1 px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-800">High Merit Candidate</span>
+</div>
+<button onclick="applyFromCalculator()" class="px-4 py-2.5 rounded bg-secondary hover:bg-secondary-fixed text-white font-semibold text-xs shadow flex items-center gap-1 transition-colors">
+<span>Apply Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+
+<div class="space-y-2">
+<span class="text-xs font-bold uppercase tracking-wider text-primary block">Program Eligibility Analysis</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs" id="calcEligibilityGrid">
+<!-- Populated dynamically via JS -->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 3. COLLEGE NOTICES MODAL -->
+<div id="noticesModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeNoticesModal()">
+<div class="relative max-w-2xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">campaign</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">Official College Notifications</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Govt. Associate College Shadan Lund Notice Board</p>
+</div>
+</div>
+<button onclick="closeNoticesModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-3 max-h-[70vh] overflow-y-auto">
+<div class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-secondary-container text-on-secondary-container">Admissions 2026</span>
+<span class="text-[11px] text-on-surface-variant font-medium">Session Fall 2026</span>
+</div>
+<h4 class="font-bold text-primary text-sm">Online Admission Verification Desk Active</h4>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+Candidates for F.Sc (Pre-Medical, Pre-Engineering), ICS, I.Com, and FA can submit documents directly at the Admin Block Helpdesk daily from 8:00 AM to 2:00 PM.
+</p>
+</div>
+<div class="p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-50 transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-emerald-700 text-white flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">eco</span> Anti-Smog Drive</span>
+<span class="text-[11px] text-emerald-800 font-medium">Punjab EPA & HED</span>
+</div>
+<h4 class="font-bold text-emerald-950 text-sm">Anti-Smog Awareness & Legal Protocols in Effect</h4>
+<p class="text-xs text-emerald-800 mt-1 leading-relaxed">
+Under the directives of Principal Dr. Imtiaz Ahmad, campus plantation drives and preventive smog face mask protocols continue across all college blocks.
+</p>
+</div>
+<div class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-primary/15 text-primary">BISE Examination</span>
+<span class="text-[11px] text-on-surface-variant font-medium">BISE D.G. Khan</span>
+</div>
+<h4 class="font-bold text-primary text-sm">Intermediate Board Examination Hall Notification</h4>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+Students may verify their roll number slips and examination hall allocation at the college academic registry. Complete biometric and ID compliance is enforced.
+</p>
+</div>
+<div class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase tracking-wider bg-secondary-fixed/50 text-secondary-fixed-variant">Scholarships</span>
+<span class="text-[11px] text-on-surface-variant font-medium">Govt. of Punjab</span>
+</div>
+<h4 class="font-bold text-primary text-sm">Ehsaas Undergraduate &amp; PEEF Scholarships</h4>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+Merit and need-based scholarship application forms are available free of cost at the student welfare desk. Deserving rural candidates are encouraged to apply.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 4. PRINCIPAL'S FULL ADDRESS MODAL -->
+<div id="principalModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closePrincipalModal()">
+<div class="relative max-w-3xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">school</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">Principal's Address to Students &amp; Community</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Dr. Imtiaz Ahmad • Ph.D. Chemistry (BZU Multan)</p>
+</div>
+</div>
+<button onclick="closePrincipalModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
+<div class="flex flex-col sm:flex-row items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<img src="principal.jpg" alt="Dr. Imtiaz Ahmad" class="w-24 h-24 rounded-full object-cover object-top border-2 border-secondary shadow-md shrink-0"/>
+<div>
+<h4 class="font-headline-sm text-lg text-primary font-bold">Dr. Imtiaz Ahmad</h4>
+<p class="text-xs text-secondary font-semibold uppercase tracking-wider">Principal, Govt. Associate College Shadan Lund</p>
+<p class="text-xs text-on-surface-variant mt-0.5">Ph.D. Chemistry — Bahauddin Zakariya University (BZU) Multan</p>
+<div class="mt-1.5 flex items-center gap-1.5 text-[11px] text-emerald-800 font-semibold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+Punjab Higher Education Department Gazetted Principal
+</div>
+</div>
+</div>
+<div class="space-y-3 text-sm text-on-surface-variant leading-relaxed font-body-md">
+<p class="font-semibold text-primary">
+بسم اللہ الرحمن الرحیم — Assalam-o-Alaikum,
+</p>
+<p>
+Welcome to <strong>Govt. Associate College Shadan Lund</strong>. It is with deep gratitude and institutional pride that I address the ambitious youth, honorable parents, and dedicated citizens of Shadan Lund and the wider Dera Ghazi Khan division.
+</p>
+<p>
+Education is the true catalyst of human dignity and national progress. At GAC Shadan Lund, we firmly believe that talent in South Punjab knows no boundaries when furnished with merit, scholarly guidance, and state-of-the-art facilities. Our science laboratories, computer centers, and extensive library are dedicated to equipping students with intellectual rigor and technical proficiency.
+</p>
+<p>
+Beyond textbooks, our collegiate culture instills moral values, civic empathy, and environmental stewardship. Our recent <strong>Anti-Smog Awareness Campaigns</strong> and national celebrations reflect our commitment to nurturing responsible citizens who actively serve their motherland.
+</p>
+<p>
+I warmly welcome all candidates seeking admission in Fall 2026. Our doors and admissions desk remain open to guide you toward a rewarding academic journey.
+</p>
+<div class="pt-3 border-t border-outline-variant/30 flex justify-between items-center text-xs">
+<span class="text-primary font-bold">Dr. Imtiaz Ahmad</span>
+<span class="text-on-surface-variant">Office of the Principal, GAC Shadan Lund</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 5. CAMPUS PHOTO TOUR MODAL -->
+<div id="campusTourModal" class="fixed inset-0 z-[9999] bg-black/85 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeCampusTourModal()">
+<div class="relative max-w-4xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">photo_library</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">College Campus Gallery &amp; Tour</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Real Campus Views • Govt. Associate College Shadan Lund</p>
+</div>
+</div>
+<button onclick="closeCampusTourModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 max-h-[75vh] overflow-y-auto">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('campus-panorama.jpg')" onclick="openSmogModal('campus-panorama.jpg', 'Campus Panoramic View', 'Academic & Admin Blocks Surrounded by Lush Lawns and Open Sky')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Campus Panorama</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('flag-hoisting.jpg')" onclick="openSmogModal('flag-hoisting.jpg', 'National Flag Hoisting', 'Faculty & Staff at Admin Block (ایڈمن بلاک)')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Flag Hoisting Ceremony</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('sports-ground.jpg')" onclick="openSmogModal('sports-ground.jpg', 'Campus Sports Grounds', 'Spacious Athletic Field & Cricket Grounds')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Sports Field</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('examination-hall.jpg')" onclick="openSmogModal('examination-hall.jpg', 'Examination Hall', 'Annual Board & College Examinations Hall')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Examination Hall</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('seerat-conference.jpg')" onclick="openSmogModal('seerat-conference.jpg', 'Seerat-un-Nabi ﷺ Conference', 'Annual Gathering in Central Library')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Seerat Conference</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('library-study.jpg')" onclick="openSmogModal('library-study.jpg', 'Central Library Study', 'Students Reading around Long Wooden Study Desks')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Central Library Study</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('student-speech.jpg')" onclick="openSmogModal('student-speech.jpg', 'Student Speech & Rostrum', 'Literary Address at the Wooden Podium')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Student Rostrum</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('anti-smog-seminar.jpg')" onclick="openSmogModal('anti-smog-seminar.jpg', 'Anti-Smog Seminar', 'Cleaner Air = Healthier Tomorrow Seminar in Library')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Anti-Smog Seminar</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('anti-smog-classroom.jpg')" onclick="openSmogModal('anti-smog-classroom.jpg', 'Student Anti-Smog Activity', 'Interactive Classroom Awareness Session')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Student Awareness</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('campus-courtyard.jpg')" onclick="openSmogModal('campus-courtyard.jpg', 'Campus Courtyard', 'Red-Brick Academic Wings & Courtyard')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Central Courtyard</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('campus-tree-path.jpg')" onclick="openSmogModal('campus-tree-path.jpg', 'Shaded Green Walkways', 'Tree-Lined Campus Boulevard & Lawns')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Shaded Walkways</span>
+</div>
+</div>
+<div class="group relative rounded-lg overflow-hidden shadow cursor-pointer h-36 bg-cover bg-center" style="background-image: url('campus-night.jpg')" onclick="openSmogModal('campus-night.jpg', 'Academic Block Night Illumination', 'Festive Green & White Lights at Academic Block')">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors flex items-end p-2">
+<span class="text-white text-[11px] font-semibold">Night Illumination</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 6. INSTITUTIONAL CHARTER MODAL -->
+<div id="charterModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeCharterModal()">
+<div class="relative max-w-2xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">account_balance</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">College Charter &amp; Academic Heritage</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Established 1986 • Punjab Higher Education Department</p>
+</div>
+</div>
+<button onclick="closeCharterModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<p>
+<strong>Govt. Associate College Shadan Lund</strong> was established in 1986 under the Punjab Higher Education Department to provide high-quality, subsidized collegiate pathways for the youth of Dera Ghazi Khan division.
+</p>
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/30 space-y-2">
+<div class="flex items-center gap-2 text-primary font-semibold text-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+Affiliation &amp; Accreditations
+</div>
+<p class="text-xs">
+• Affiliated with the Board of Intermediate & Secondary Education (BISE) D.G. Khan for all Intermediate programs (F.Sc, ICS, FA, I.Com).<br/>
+• Accreditations with top public sector universities for 2-Year Associate Degree Programs (ADP).
+</p>
+</div>
+<p>
+Located strategically on the Indus Highway (N-55), the campus spans extensive acres with purpose-built Academic and Administrative blocks, well-maintained botanical gardens, sports fields, and modern laboratory wings.
+</p>
+</div>
+</div>
+</div>
+
+<!-- 7. STUDENT GRIEVANCE CELL MODAL -->
+<div id="grievanceModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeGrievanceModal()">
+<div class="relative max-w-xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">support_agent</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">Anti-Harassment &amp; Grievance Cell</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Higher Education Department Punjab Compliance</p>
+</div>
+</div>
+<button onclick="closeGrievanceModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<p>
+In strict compliance with HED Punjab directives and Protection Against Harassment Regulations, Govt. Associate College Shadan Lund operates a dedicated, confidential grievance desk.
+</p>
+<ul class="text-xs space-y-2 bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0">check_circle</span>
+<span><strong>100% Confidential:</strong> Inquiries and grievances are handled directly by the Principal Office committee.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0">check_circle</span>
+<span><strong>In-Person Desk:</strong> Students and parents can access the helpdesk at the College Admin Block daily.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-emerald-700 text-[18px] shrink-0">check_circle</span>
+<span><strong>Anti-Bullying Protocols:</strong> Zero tolerance for ragging, harassment, or disciplinary misconduct.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 8. STUDENT CODE OF CONDUCT MODAL -->
+<div id="codeOfConductModal" class="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 overflow-y-auto" onclick="if(event.target === this) closeCodeOfConductModal()">
+<div class="relative max-w-xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 my-8 animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between p-4 bg-primary text-on-primary">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">gavel</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-surface-bright">Student Code of Conduct</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed">Discipline, Attendance &amp; Collegiate Rules</p>
+</div>
+</div>
+<button onclick="closeCodeOfConductModal()" class="w-8 h-8 rounded-full bg-surface-bright/20 hover:bg-surface-bright/30 text-surface-bright flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-6 space-y-3 text-sm text-on-surface-variant leading-relaxed">
+<p>
+Govt. Associate College Shadan Lund upholds the highest standards of student discipline, decorum, and academic integrity.
+</p>
+<div class="space-y-2 text-xs bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
+<p><strong>1. Mandatory 75% Attendance:</strong> BISE D.G. Khan examination forms are conditional upon maintaining at least 75% classroom and laboratory attendance.</p>
+<p><strong>2. Prescribed College Uniform:</strong> Students must attend campus in the approved college uniform with institutional student ID card visible.</p>
+<p><strong>3. Campus Civility &amp; Cleanliness:</strong> Preserving campus lawns, trees, library silence, and classroom apparatus is a shared responsibility.</p>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+// Lightbox Modal
+function openSmogModal(src, title, desc) {
+  const modal = document.getElementById('smogModal');
+  const img = document.getElementById('modalImg');
+  const titleEl = document.getElementById('modalTitle');
+  const descEl = document.getElementById('modalDesc');
+  if (modal && img) {
+    img.src = src;
+    if (titleEl) titleEl.textContent = title;
+    if (descEl) descEl.textContent = desc;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeSmogModal() {
+  const modal = document.getElementById('smogModal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+}
+
+// 1. Admission Application Modal
+function openApplyModal() {
+  document.getElementById('applyModal').classList.remove('hidden');
+  document.getElementById('applyModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeApplyModal() {
+  document.getElementById('applyModal').classList.add('hidden');
+  document.getElementById('applyModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+function calcAppPercentage() {
+  const obt = parseFloat(document.getElementById('appMatricObt').value) || 0;
+  const tot = parseFloat(document.getElementById('appMatricTotal').value) || 1100;
+  const pct = tot > 0 ? ((obt / tot) * 100).toFixed(2) : '0.00';
+  document.getElementById('appMeritPercent').value = pct + '%';
+}
+function submitApplyForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('appStudentName').value;
+  const father = document.getElementById('appFatherName').value;
+  const cnic = document.getElementById('appCnic').value;
+  const program = document.getElementById('appProgram').value;
+  const obt = document.getElementById('appMatricObt').value;
+  const tot = document.getElementById('appMatricTotal').value;
+  const pct = document.getElementById('appMeritPercent').value;
+  const randomVoucher = 'GAC-2026-' + Math.floor(1000 + Math.random() * 9000);
+
+  document.getElementById('slipVoucherNo').textContent = randomVoucher;
+  document.getElementById('slipName').textContent = name;
+  document.getElementById('slipFather').textContent = father;
+  document.getElementById('slipCnic').textContent = cnic;
+  document.getElementById('slipProgram').textContent = program;
+  document.getElementById('slipMarks').textContent = obt + ' / ' + tot;
+  document.getElementById('slipPercent').textContent = pct;
+
+  document.getElementById('applyForm').classList.add('hidden');
+  document.getElementById('applySuccessSlip').classList.remove('hidden');
+}
+
+// 2. Merit Calculator Modal
+function openMeritCalculator() {
+  document.getElementById('meritCalcModal').classList.remove('hidden');
+  document.getElementById('meritCalcModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+  runLiveMeritCalc();
+}
+function closeMeritCalculator() {
+  document.getElementById('meritCalcModal').classList.add('hidden');
+  document.getElementById('meritCalcModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+function runLiveMeritCalc() {
+  const obt = parseFloat(document.getElementById('calcObt').value) || 0;
+  const tot = parseFloat(document.getElementById('calcTotal').value) || 1100;
+  const pct = tot > 0 ? ((obt / tot) * 100).toFixed(2) : 0;
+  
+  document.getElementById('calcResultDisplay').textContent = pct + '%';
+  const badge = document.getElementById('calcStatusBadge');
+  if (pct >= 80) {
+    badge.textContent = 'High Merit Candidate (Eligible for all disciplines)';
+    badge.className = 'inline-block mt-1 px-2 py-0.5 rounded text-xs font-bold bg-emerald-100 text-emerald-800';
+  } else if (pct >= 60) {
+    badge.textContent = 'Eligible for Science & Computing Wings';
+    badge.className = 'inline-block mt-1 px-2 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-800';
+  } else {
+    badge.textContent = 'Eligible for Humanities & Commerce Wings';
+    badge.className = 'inline-block mt-1 px-2 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-800';
+  }
+
+  const programs = [
+    { name: 'F.Sc Pre-Medical', min: 65 },
+    { name: 'F.Sc Pre-Engineering', min: 65 },
+    { name: 'ICS (Comp Science)', min: 60 },
+    { name: 'I.Com (Commerce)', min: 45 },
+    { name: 'FA Humanities & Arts', min: 45 },
+    { name: 'ADP 2-Year Programs', min: 50 },
+  ];
+
+  const grid = document.getElementById('calcEligibilityGrid');
+  grid.innerHTML = programs.map(p => {
+    const isEligible = pct >= p.min;
+    return `
+      <div class="p-2 rounded border ${isEligible ? 'bg-emerald-50/70 border-emerald-300' : 'bg-surface-container-low border-outline-variant/30 opacity-60'} flex items-center justify-between">
+        <span class="font-medium text-primary">${p.name}</span>
+        <span class="font-bold ${isEligible ? 'text-emerald-700' : 'text-gray-500'}">${isEligible ? 'Eligible' : 'Min ' + p.min + '%'}</span>
+      </div>
+    `;
+  }).join('');
+}
+function applyFromCalculator() {
+  const obt = document.getElementById('calcObt').value;
+  closeMeritCalculator();
+  openApplyModal();
+  document.getElementById('appMatricObt').value = obt;
+  calcAppPercentage();
+}
+
+// 3. Notices Modal
+function openNoticesModal() {
+  document.getElementById('noticesModal').classList.remove('hidden');
+  document.getElementById('noticesModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeNoticesModal() {
+  document.getElementById('noticesModal').classList.add('hidden');
+  document.getElementById('noticesModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 4. Principal Modal
+function openPrincipalModal() {
+  document.getElementById('principalModal').classList.remove('hidden');
+  document.getElementById('principalModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closePrincipalModal() {
+  document.getElementById('principalModal').classList.add('hidden');
+  document.getElementById('principalModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 5. Campus Tour Modal
+function openCampusTourModal() {
+  document.getElementById('campusTourModal').classList.remove('hidden');
+  document.getElementById('campusTourModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeCampusTourModal() {
+  document.getElementById('campusTourModal').classList.add('hidden');
+  document.getElementById('campusTourModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 6. Charter Modal
+function openCharterModal() {
+  document.getElementById('charterModal').classList.remove('hidden');
+  document.getElementById('charterModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeCharterModal() {
+  document.getElementById('charterModal').classList.add('hidden');
+  document.getElementById('charterModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 7. Grievance Modal
+function openGrievanceModal() {
+  document.getElementById('grievanceModal').classList.remove('hidden');
+  document.getElementById('grievanceModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeGrievanceModal() {
+  document.getElementById('grievanceModal').classList.add('hidden');
+  document.getElementById('grievanceModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 8. Code of Conduct Modal
+function openCodeOfConductModal() {
+  document.getElementById('codeOfConductModal').classList.remove('hidden');
+  document.getElementById('codeOfConductModal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+function closeCodeOfConductModal() {
+  document.getElementById('codeOfConductModal').classList.add('hidden');
+  document.getElementById('codeOfConductModal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// 9. Download Prospectus
+function downloadProspectus() {
+  alert('GAC Shadan Lund Prospectus 2026: Prospectus and admission regulations document download initiated. Physical copies are also available at the College Admin Block Helpdesk.');
+}
+
+// 10. Language Toggle
+function toggleLanguage(lang) {
+  if (lang === 'ur') {
+    alert('اردو ورژن: گورنمنٹ ایسوسی ایٹ کالج شاہدن لنڈ کی ویب سائٹ پر خوش آمدید۔ تمام داخلہ فارم، میرٹ لسٹیں اور نوٹسز ایڈمن بلاک سے دستیاب ہیں۔');
+  } else {
+    alert('English Version: GAC Shadan Lund official academic portal active.');
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeSmogModal();
+    closeApplyModal();
+    closeMeritCalculator();
+    closeNoticesModal();
+    closePrincipalModal();
+    closeCampusTourModal();
+    closeCharterModal();
+    closeGrievanceModal();
+    closeCodeOfConductModal();
+  }
+});
+</script>
+</body></html>
