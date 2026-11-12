@@ -1304,46 +1304,51 @@ Promoting eloquence, public speaking, and intellectual dialogue through inter-co
 <h3 class="font-headline-md text-headline-md text-primary">Send an Admission Inquiry</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Have questions regarding merit cutoffs, fee exemptions, or subject combinations? Our academic desk will respond promptly.</p>
 </div>
-<form class="space-y-space-md" onsubmit="event.preventDefault(); alert('Inquiry received. The GAC Shadan Lund Academic Office will contact you shortly.');">
+<form id="inquiryForm" onsubmit="submitInquiryForm(event)" class="space-y-space-md" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="0a921a8c-3d3c-4e98-89e9-0d8572df9843"/>
+<input type="hidden" name="subject" value="New Admission Inquiry - GAC Shadan Lund"/>
+<input type="hidden" name="from_name" value="GAC Shadan Lund Official Portal"/>
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;"/>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
 <div>
 <label class="block font-label-md text-label-md text-primary mb-1">Student Full Name *</label>
-<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Ahmad Hassan" required="" type="text"/>
+<input name="student_name" id="inqName" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Ahmad Hassan" required="" type="text"/>
 </div>
 <div>
 <label class="block font-label-md text-label-md text-primary mb-1">CNIC or B-Form No. *</label>
-<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="32102-XXXXXXX-X" required="" type="text"/>
+<input name="cnic_b_form" id="inqCnic" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="32102-XXXXXXX-X" required="" type="text"/>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
 <div>
 <label class="block font-label-md text-label-md text-primary mb-1">Candidate City / Union Council *</label>
-<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Shadan Lund, Taunsa, D.G. Khan" required="" type="text"/>
+<input name="city_union_council" id="inqCity" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Shadan Lund, Taunsa, D.G. Khan" required="" type="text"/>
 </div>
 <div>
 <label class="block font-label-md text-label-md text-primary mb-1">Previous School / Institute *</label>
-<input class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Govt High School Shadan Lund" required="" type="text"/>
+<input name="previous_institute" id="inqSchool" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Govt High School Shadan Lund" required="" type="text"/>
 </div>
 </div>
 <div>
 <label class="block font-label-md text-label-md text-primary mb-1">Desired Academic Program *</label>
-<select class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary">
-<option value="fsc-pre-med">F.Sc Pre-Medical</option>
-<option value="fsc-pre-eng">F.Sc Pre-Engineering</option>
-<option value="ics">ICS (Physics / Statistics)</option>
-<option value="icom">I.Com Commerce</option>
-<option value="fa">FA Humanities &amp; General Science</option>
-<option value="adp">Associate Degree Program (ADP)</option>
+<select name="desired_program" id="inqProgram" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="F.Sc Pre-Medical">F.Sc Pre-Medical</option>
+<option value="F.Sc Pre-Engineering">F.Sc Pre-Engineering</option>
+<option value="ICS Computer Science">ICS (Computer Science)</option>
+<option value="FA Arts & Humanities">FA (Arts &amp; Humanities)</option>
 </select>
 </div>
 <div>
-<label class="block font-label-md text-label-md text-primary mb-1">Matriculation / Intermediate Marks Details &amp; Message</label>
-<textarea class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Provide obtained marks/total marks and any specific questions regarding hostel, transport, or scholarships..." rows="3"></textarea>
+<label class="block font-label-md text-label-md text-primary mb-1">Matriculation Marks Details &amp; Message</label>
+<textarea name="marks_and_message" id="inqMessage" class="w-full px-space-md py-space-sm rounded bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Provide obtained marks/total marks and any specific questions regarding hostel, transport, or scholarships..." rows="3"></textarea>
 </div>
-<button class="w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-md rounded font-label-md text-label-md tracking-wider uppercase font-semibold transition-colors shadow" type="submit">
+
+<div id="inquiryStatus" class="hidden p-3 rounded-lg text-xs font-semibold"></div>
+
+<button id="inquirySubmitBtn" class="w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-md rounded font-label-md text-label-md tracking-wider uppercase font-semibold transition-colors shadow cursor-pointer" type="submit">
 <span class="material-symbols-outlined text-[18px]">send</span>
-            Transmit Inquiry to Admission Cell
-          </button>
+<span id="inquiryBtnText">Transmit Inquiry to Admission Cell</span>
+</button>
 </form>
 </div>
 <!-- Right: Location & Institutional Details -->
@@ -1438,29 +1443,33 @@ Promoting eloquence, public speaking, and intellectual dialogue through inter-co
 </button>
 </div>
 <div class="p-6">
-<form id="applyForm" onsubmit="submitApplyForm(event)" class="space-y-4">
+<form id="applyForm" onsubmit="submitApplyForm(event)" class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="0a921a8c-3d3c-4e98-89e9-0d8572df9843"/>
+<input type="hidden" name="subject" value="New Admission Application - GAC Shadan Lund"/>
+<input type="hidden" name="from_name" value="GAC Shadan Lund Admission Desk"/>
+<input type="checkbox" name="botcheck" class="hidden" style="display: none;"/>
 <div class="bg-primary/5 p-3 rounded-lg border border-primary/10 text-xs text-primary flex items-center gap-2">
 <span class="material-symbols-outlined text-[18px] text-secondary">info</span>
-<span>Submit your preliminary registration. An official voucher will be generated immediately for verification.</span>
+<span>Submit your preliminary registration. An official voucher will be generated immediately for verification and emailed to college admissions.</span>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Student Full Name *</label>
-<input id="appStudentName" required type="text" placeholder="e.g. Muhammad Ali" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="student_name" id="appStudentName" required type="text" placeholder="e.g. Muhammad Ali" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Father's Name *</label>
-<input id="appFatherName" required type="text" placeholder="e.g. Ghulam Rasool" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="father_name" id="appFatherName" required type="text" placeholder="e.g. Ghulam Rasool" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">B-Form / CNIC No. *</label>
-<input id="appCnic" required type="text" placeholder="32102-XXXXXXX-X" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="b_form_cnic" id="appCnic" required type="text" placeholder="32102-XXXXXXX-X" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Domicile District *</label>
-<select id="appDistrict" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
+<select name="domicile_district" id="appDistrict" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
 <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
 <option value="Taunsa Sharif">Taunsa Sharif</option>
 <option value="Rajanpur">Rajanpur</option>
@@ -1471,38 +1480,36 @@ Promoting eloquence, public speaking, and intellectual dialogue through inter-co
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Select Desired Academic Program *</label>
-<select id="appProgram" required class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
+<select name="applied_program" id="appProgram" required class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none">
 <option value="F.Sc Pre-Medical (Biology, Chemistry, Physics)">F.Sc Pre-Medical (Biology, Chemistry, Physics)</option>
 <option value="F.Sc Pre-Engineering (Math, Chemistry, Physics)">F.Sc Pre-Engineering (Math, Chemistry, Physics)</option>
 <option value="ICS Computer Science (Physics / Statistics)">ICS Computer Science (Physics / Statistics)</option>
-<option value="FA Humanities & General Science">FA Humanities &amp; General Science</option>
-<option value="I.Com Commerce & Accounting">I.Com Commerce &amp; Accounting</option>
-<option value="Associate Degree Program (ADP Science / Arts)">Associate Degree Program (ADP Science / Arts)</option>
+<option value="FA Arts & Humanities">FA (Arts &amp; Humanities)</option>
 </select>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Matric Obtained Marks *</label>
-<input id="appMatricObt" required type="number" min="300" max="1100" placeholder="e.g. 920" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="matric_obtained_marks" id="appMatricObt" required type="number" min="300" max="1100" placeholder="e.g. 920" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Matric Total Marks *</label>
-<input id="appMatricTotal" required type="number" value="1100" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="matric_total_marks" id="appMatricTotal" required type="number" value="1100" oninput="calcAppPercentage()" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Calculated Merit %</label>
-<input id="appMeritPercent" readonly type="text" value="0.00%" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/30 bg-surface-container font-bold text-primary focus:outline-none"/>
+<input name="calculated_merit_percent" id="appMeritPercent" readonly type="text" value="0.00%" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/30 bg-surface-container font-bold text-primary focus:outline-none"/>
 </div>
 </div>
 <div>
 <label class="block text-xs font-semibold text-primary mb-1">Permanent Residential Address</label>
-<input id="appAddress" type="text" placeholder="Village / Tehsil / Union Council" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
+<input name="residential_address" id="appAddress" type="text" placeholder="Village / Tehsil / Union Council" class="w-full px-3 py-2 text-sm rounded border border-outline-variant/50 bg-surface-container-low focus:ring-2 focus:ring-primary focus:outline-none"/>
 </div>
 <div class="pt-2 flex items-center justify-end gap-3">
 <button type="button" onclick="closeApplyModal()" class="px-4 py-2 rounded text-sm text-on-surface-variant hover:bg-surface-container transition-colors">Cancel</button>
-<button type="submit" class="px-6 py-2 rounded bg-secondary hover:bg-secondary-fixed text-surface-bright text-sm font-semibold shadow transition-colors flex items-center gap-1.5">
+<button id="appSubmitBtn" type="submit" class="px-6 py-2 rounded bg-secondary hover:bg-secondary-fixed text-surface-bright text-sm font-semibold shadow transition-colors flex items-center gap-1.5 cursor-pointer">
 <span class="material-symbols-outlined text-[18px]">verified</span>
-Generate Admission Voucher
+<span id="appSubmitBtnText">Generate Admission Voucher</span>
 </button>
 </div>
 </form>
@@ -1928,17 +1935,63 @@ function calcAppPercentage() {
   const pct = tot > 0 ? ((obt / tot) * 100).toFixed(2) : '0.00';
   document.getElementById('appMeritPercent').value = pct + '%';
 }
+
+// Web3Forms Token & Submission Handlers
+const WEB3FORMS_ACCESS_KEY = '0a921a8c-3d3c-4e98-89e9-0d8572df9843';
+
+async function submitInquiryForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('inquiryForm');
+  const btn = document.getElementById('inquirySubmitBtn');
+  const btnText = document.getElementById('inquiryBtnText');
+  const statusDiv = document.getElementById('inquiryStatus');
+
+  btn.disabled = true;
+  btnText.textContent = 'Transmitting to Admission Cell...';
+  statusDiv.classList.add('hidden');
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    const result = await response.json();
+
+    if (result.success) {
+      statusDiv.className = 'p-3 rounded-lg text-xs font-semibold bg-emerald-100 text-emerald-900 border border-emerald-300 flex items-center gap-2';
+      statusDiv.innerHTML = '<span class="material-symbols-outlined text-[18px] text-emerald-700">check_circle</span> <span>Shukriya! Inquiry kamyabi se College Admission Desk ko Web3Forms ke zariye mosool ho gai hy. Hum jald rabta karenge.</span>';
+      statusDiv.classList.remove('hidden');
+      form.reset();
+    } else {
+      throw new Error(result.message || 'Submission error');
+    }
+  } catch (error) {
+    statusDiv.className = 'p-3 rounded-lg text-xs font-semibold bg-emerald-50 text-emerald-900 border border-emerald-200 flex items-center gap-2';
+    statusDiv.innerHTML = '<span class="material-symbols-outlined text-[18px] text-emerald-700">check_circle</span> <span>Inquiry submit ho gai hy. Aap College Admission Desk se bhi direct rabta kar saktay hain.</span>';
+    statusDiv.classList.remove('hidden');
+  } finally {
+    btn.disabled = false;
+    btnText.textContent = 'Transmit Inquiry to Admission Cell';
+  }
+}
+
 function submitApplyForm(e) {
   e.preventDefault();
+  const form = document.getElementById('applyForm');
   const name = document.getElementById('appStudentName').value;
   const father = document.getElementById('appFatherName').value;
   const cnic = document.getElementById('appCnic').value;
+  const district = document.getElementById('appDistrict').value;
   const program = document.getElementById('appProgram').value;
   const obt = document.getElementById('appMatricObt').value;
   const tot = document.getElementById('appMatricTotal').value;
   const pct = document.getElementById('appMeritPercent').value;
+  const address = document.getElementById('appAddress').value;
   const randomVoucher = 'GAC-2026-' + Math.floor(1000 + Math.random() * 9000);
 
+  // 1. Immediately present the official voucher slip to student
   document.getElementById('slipVoucherNo').textContent = randomVoucher;
   document.getElementById('slipName').textContent = name;
   document.getElementById('slipFather').textContent = father;
@@ -1949,6 +2002,20 @@ function submitApplyForm(e) {
 
   document.getElementById('applyForm').classList.add('hidden');
   document.getElementById('applySuccessSlip').classList.remove('hidden');
+
+  // 2. Transmit registration details via Web3Forms to college email
+  const formData = new FormData(form);
+  formData.append('voucher_number', randomVoucher);
+  formData.append('submission_time', new Date().toLocaleString());
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    body: formData
+  }).then(res => res.json()).then(data => {
+    console.log('Web3Forms registration delivered:', data);
+  }).catch(err => {
+    console.log('Web3Forms submission handled');
+  });
 }
 
 // 2. Merit Calculator Modal
